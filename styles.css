@@ -5,6 +5,7 @@ body {
     background: #3b3b3b; /* 3b3b3b dfdfdf */
     display: grid;
     justify-content: center;
+    text-align: center;
 
 }
 
@@ -27,8 +28,6 @@ subtitulo {
     font-size: 15px;
     color:#cecece;
 }
-
-
 
 a.mylink:link { text-decoration: none; color: rgb(0, 155, 139);}
 a.mylink:visited { text-decoration: none; color: rgb(0, 155, 139);}
