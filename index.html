@@ -4,6 +4,7 @@
 
 <meta charset="utf-8">
 <link rel="stylesheet" href="styles.css"/>
+<link rel="stylesheet" href="feedback.css"/>
 <link rel="icon" type="image/x-icon" href="img/code2.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Image slideshow -->
 
@@ -34,6 +35,22 @@
 </head>
 <body>
 <br>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------- Feedback Button ---------------------------------------------------->
+
+<div class="tooltip-wrap">
+    <div class='videos'><div class='card'><button class="feedbackButton watchbutton">Suggestions?</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_yxJ2EVG3Z7hpe0I-0UGXzd0x6NV11DGq6mFGmu8LwQMHAg/viewform?embedded=true" width="640" height="459" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div></div></div></div>
+    </div>
+    <div class="tooltip-content">
+        <img src="img/feedback.png">
+    </div> 
+  </div>
+
+<!------------------------------------------------------------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------------------------------------------>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -350,12 +367,16 @@
   function closeVideo(event) {
     var modal = $(".trailerdivbox.isOpen");
     modal.removeClass("isOpen").hide();
-  }
+}
   
+
   $(".videos").on("click", ".watchbutton", openVideo);
   $(".videos").on("click", ".close", closeVideo);
   
 });
+
+
+
 </script>
 
 <!--------------------------------------------------- End of : SCRIPT ---------------------------------------------------->
