@@ -6,6 +6,10 @@
 <link rel="stylesheet" href="styles.css"/>
 <link rel="icon" type="image/x-icon" href="img/code2.ico">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Image slideshow -->
+
+<!-- Video PopUp -->
+<link rel="stylesheet" href="videopopup.css"/>
+
 <title>Erica Lima - Portfolio</title>
 
 <style>
@@ -23,11 +27,12 @@
 <body>
 <br>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------- Header --------------------------------------------------------->
 
-<table>
+<table align="center">
     <tr>
         <td>
             <titulo>Erica Lima</titulo><br>
@@ -46,7 +51,7 @@
     </tr>
 </table>
 <br>
-
+<table align="center"><tr><td>
 <!------------------------------------------------------------------------------------------------------------------------>
 <!------------------------------------------------------ PROJECT 1 ------------------------------------------------------->
 
@@ -91,7 +96,7 @@
         </tr>
         <tr>
           <td class="l3"> <!-- Links -->
-            <button>Code</button>
+            <button><a href="https://github.com/Kikasantini/projects" target="_blank">GitHub</a></button>
           </td>
         </tr>
       </table>
@@ -158,7 +163,7 @@
         <tr>
           <td class="l2"> <!-- Descrição do projeto -->
             <p>As a gamer, I've always had a special interest in the area. 
-            I started this project in late 2020 with a clear objective in mind: combine all good things I've experienced 
+            I started this project in late 2020's with a clear objective in mind: combine all good things I've experienced 
             from many years of gaming in 1 single mobile game.</p>
 
             <p>This has been a challenging and amazing experience, and there's so much more to learn and implement. 
@@ -168,8 +173,20 @@
         </tr>
         <tr>
           <td class="l3"> <!-- Links -->
-            <button><a href="https://github.com/Kikasantini/RunnerRPG" target="_blank">GitHub</a></button>
-            <button>Demo Video</button>
+
+            <table>
+                <tr>
+                    <td>
+                        <button><a href="https://github.com/Kikasantini/RunnerRPG" target="_blank">GitHub</a></button>
+                    </td>
+                    <td>
+                        <div class='videos'><div class='card'><button class="watchbutton">Demo Video</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
+                            <iframe class="trailervideo" width="560" height="315" src="img/Project2/video.mp4" frameborder="0" allowfullscreen></iframe></div></div></div></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
           </td>
         </tr>
       </table>
@@ -185,30 +202,10 @@
   <tr>
     <td class="half">
 
-      <!-- 1 imagem só :
-      <img src="img/cat1.ico">
-      -->
-
-      <!-- Start of : Image slideshow -->
-      <div id="projeto3" class="w3-content w3-display-container">
-        <div class="w3-display-container mySlides">
-          <img src="img/Project3/1.jpg">
-          <div class="numbertext">1/2</div>
+        <div class="w3-content w3-display-container">
+            <img src="img/Project3/1.jpg"> <!-- 1 image -->
+            <div class="numbertext">1/1</div>
         </div>
-
-        <!-- Essa é uma opção de vídeo, a outra é colocar um botão com link pro vídeo -->
-        <div class="w3-display-container mySlides">              
-          <video controls muted>
-            <source src="img/Project3/video.mp4" type="video/mp4">
-          </video>
-          <div class="numbertext">2/2</div>
-        </div>
-        <!-- Fim do vídeo -->
-
-        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-      <!-- End of : Image slideshow -->
 
     </td>
     <td>
@@ -247,8 +244,20 @@
         </tr>
         <tr>
           <td class="l3"> <!-- Links -->
-            <button>Code</button>
-            <button>Demo Video</button>
+
+            <table>
+                <tr>
+                    <td>
+                        <button><a href="..." target="_blank">GitHub</a></button>
+                    </td>
+                    <td>
+                        <div class='videos'><div class='card'><button class="watchbutton">Demo Video</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
+                            <iframe class="trailervideo" width="560" height="315" src="img/Project3/video.mp4" frameborder="0" allowfullscreen></iframe></div></div></div></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
           </td>
         </tr>
       </table>
@@ -259,6 +268,10 @@
 <br>
 
 
+
+
+
+</td></tr></table>
 <!------------------------------------------------------------------------------------------------------------------------>
 <!-------------------------------------------------- Start of : SCRIPT --------------------------------------------------->
 <script>
@@ -305,6 +318,33 @@
 <!--------------------------------------------------- End of : SCRIPT ---------------------------------------------------->
 <!------------------------------------------------------------------------------------------------------------------------>
 
+<!-- Video Script -->
+<script>
+    $(function() {
+  function openVideo(event) {
+    var card = $(this).closest(".card");
+    var modal = $(".trailerdivbox", card);
+    modal.addClass("isOpen").show();
+  }
+
+  function closeVideo(event) {
+    var modal = $(".trailerdivbox.isOpen");
+    modal.removeClass("isOpen").hide();
+  }
+  
+  $(".videos").on("click", ".watchbutton", openVideo);
+  $(".videos").on("click", ".close", closeVideo);
+  
+});
+</script>
+
+<!--------------------------------------------------- End of : SCRIPT ---------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------>
+
 
 </body>
+<footer>
+    <br><br>Montreal-QC, Canada - 2022<br>
+    Website under development by Erica Santini de Lima
+</footer>
 </html>
