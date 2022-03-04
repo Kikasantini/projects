@@ -1,9 +1,8 @@
 /* ======================================================================================== */
-/* ================================== Start of: SETTINGS ================================== */
+/* Start of : GENERAL SETTINGS */
 
 body {
-    background: #3b3b3b; /* 3b3b3b dfdfdf */
-    /*display: grid;*/
+    background: #3b3b3b;
     justify-content: center;
 }
 
@@ -27,10 +26,10 @@ subtitulo {
     color:#cecece;
 }
 
+/* Links */
 a.mylink:link { text-decoration: none; color: rgb(0, 155, 139);}
 a.mylink:visited { text-decoration: none; color: rgb(0, 155, 139);}
 a.mylink:hover { text-decoration: none; color: turquoise; background: #707070;}
-
 
 /* Regular buttons */
 a:link {text-decoration: none; font-size: 16px;}
@@ -39,14 +38,10 @@ button {
     border-radius: 2px;
     padding: 5px;
 }
+button:hover { background-color: rgb(224, 160, 64);}
 
-button:hover {
-    background-color: rgb(224, 160, 64);    
-}
-
-/* =================================== End of: SETTINGS =================================== */
 /* ======================================================================================== */
-
+/* Start of : BUTTONS SOCIAL MEDIA */
 
 ul {
     padding: 0;
@@ -67,11 +62,8 @@ ul {
     height: 50px;
     display: block;
     opacity: 50%;
-    
     filter: grayscale(100%);
-    
     }
-    
     ul li a:hover img {
     transform: scale(1.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -79,16 +71,14 @@ ul {
     filter: grayscale(2%);
     }
 
-/* ============================= End of: Buttons Social Media ============================= */
 /* ======================================================================================== */
-
-/* SLIDESHOW */
+/* Start of : SLIDESHOW */
 
 .mySlides {display:none;}
 
 img {
-  max-height: 370px;
-  max-width: 370px;
+    max-height: 370px;
+    max-width: 370px;
 }
 
 video {
@@ -100,12 +90,10 @@ video {
 .w3-display-container {
     width: 370px;
     height: 370px;
-
-  margin: auto;
-  background-color: black;
-  text-align: center;
+    margin: auto;
+    background-color: black;
+    text-align: center;
 }
-
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -116,20 +104,18 @@ video {
     top: 0;
   }
 
-
 /* ======================================================================================== */
-/* ================================== Start of: PROJECTS ================================== */
+/* Start of : PROJECTS */
 
 .project {
-  /* 1 linha, 2 colunas */
-  width: 800px;
-  background-color: rgb(189, 189, 189); /* rgb(116, 116, 116) */
-  color: black; /* #f3f3f3 */
-  /*border-radius: 5px;*/
-  font-size: 16px;
-  place-items: left;  
-  text-align: left;
-  border-spacing: 20px;
+    /* 1 linha, 2 colunas */
+    width: 800px;
+    background-color: rgb(189, 189, 189);
+    color: black;
+    font-size: 16px;
+    place-items: left;  
+    text-align: left;
+    border-spacing: 20px;
 }
 
 .half { width: 50%;}
@@ -159,24 +145,10 @@ text {
     font-weight: bold;
 }
 
-
-
-/* =================================== End of: PROJECTS =================================== */
 /* ======================================================================================== */
-
-
-
-
-/* ======================================================================================== */
-/* ================================== Start of: SCROLLBAR ================================= */
+/* Start of : SCROLLBAR */
 
 ::-webkit-scrollbar { width: 15px;}
 ::-webkit-scrollbar-track { background-color: rgb(184, 184, 184)}
 ::-webkit-scrollbar-thumb { background: rgb(161, 161, 161);}
 ::-webkit-scrollbar-thumb:hover { background: rgb(224, 160, 64);}
-
-/* =================================== End of: SCROLLBAR ================================== */
-/* ======================================================================================== */
-
-
-

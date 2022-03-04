@@ -1,6 +1,8 @@
+/* ========================================================================================== */
+/* Start of : FEEDBACK POPUP */
+
 .tooltip-wrap {
     position: relative;
-    background-color: aqua;
     width: fit-content;
     height: fit-content;
 }
@@ -14,10 +16,8 @@
 
 .tooltip-content {
     display: none;
-    /* position: absolute; */
     padding: .5em;
     z-index: 1;
-    /*position: fixed;*/
 }
 
 .tooltip-wrap:hover .tooltip-content {
@@ -30,7 +30,7 @@
 }
 
 /* ========================================================================================== */
-/* Here begins the : BUTTON */
+/* Start of : FEEDBACK BUTTON */
 
 .feedbackButton {
     display: none;
@@ -58,5 +58,3 @@
     transform: scale(1.2);  
     box-shadow: 2px 2px 1px 0px #1f1f1f;
 }
-
-/* ======================================================================================== */

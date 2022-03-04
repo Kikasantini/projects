@@ -1,27 +1,24 @@
-/* Watch Trailer Button CSS */
+/* ========================================================================================== */
+/* Start of : VIDEO POPUP */
 
-.watchbutton {
-  border: none;
-}
+.watchbutton { border: none;}
 
 .trailerdivbox {
   display: none;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   float: left;
   position: fixed; /* fixed */
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   /*overflow: auto; /* Enable Scrolling */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-  z-index:2;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);  /* Black w/ opacity */
+  z-index: 2;
 }
 
 .videoWrapper {
-  position:relative; /* relative */
+  position:relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
@@ -29,7 +26,7 @@
 }
 
 .videoWrapper iframe {
-  position: absolute; /* absolute */
+  position: absolute;
   max-width: 560px;
   max-height: 315px;
   width: 95%;
