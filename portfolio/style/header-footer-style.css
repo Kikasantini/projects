@@ -86,10 +86,8 @@ footer {
 }
 
 
-/* ======================================================================================== */
-/* Small Screens */
-
-@media (max-width: 500px) {
+/* My phone screen OR small screen */
+@media (aspect-ratio: 20/9), (max-width: 500px) {
     header h1 {
         font-size: 80px;
     }

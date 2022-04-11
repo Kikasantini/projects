@@ -137,10 +137,8 @@ projects table {
     filter: grayscale(0%);
 }
 
-/* ======================================================================================== */
-/* Small Screens */
-
-@media (max-width: 500px) {
+/* My phone screen OR small screen */
+@media (aspect-ratio: 20/9), (max-width: 500px) {
     td {
         display: table-row;
     }
