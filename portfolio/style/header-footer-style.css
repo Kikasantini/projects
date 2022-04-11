@@ -24,7 +24,7 @@ header h1 {
 }
 
 header p {
-    color: rgb(0, 225, 255); /* gold */
+    color: gold;
     margin: 2px;
     font-size: 18px;
     
