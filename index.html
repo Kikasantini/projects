@@ -2,447 +2,492 @@
 <html>
 <head>
 
-<meta charset="utf-8">
-<link rel="stylesheet" href="styles.css"/>
-<link rel="stylesheet" href="feedback.css"/>
-<link rel="stylesheet" href="videopopup.css"/> <!-- Video PopUp -->
-<link rel="icon" type="image/x-icon" href="img/code2.ico">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!-- Image slideshow -->
+  <!-- Style pages -->
+  <link rel="stylesheet" href="style/style.css"/>
+  <link rel="stylesheet" href="style/modal.css"/>
 
-<title>Erica Lima - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="icon" type="image/x-icon" href="img/e.png">
 
-<style>
-    hr {
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        border-style:solid;
-        border-width: 1px;
-        border-color: black;
-        background-color: black;
-    }
-    .footer {
-        background-color: #000000;
-        width: 100%;
-        height: 110px;
-        color:rgb(189, 189, 189);
-        font-size: 12px;
-        text-align: center;
-    }
-</style>
+  <title>Erica Lima - Portfolio</title>
 
 </head>
 <body>
 
-<!------------------------------------------------------------------------------------------------------------------------>
-<!--------------------------------------------------- Feedback Button ---------------------------------------------------->
-
-<div class="tooltip-wrap">
-    <div class='videos'><div class='card'><button class="feedbackButton watchbutton">Suggestions?</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_yxJ2EVG3Z7hpe0I-0UGXzd0x6NV11DGq6mFGmu8LwQMHAg/viewform?embedded=true" width="640" height="459" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div></div></div></div>
-    </div>
-    <div class="tooltip-content">
-        <img src="img/newFeedback.png">
-    </div> 
-  </div>
-
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------------------------------------------------------------------------>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------- Header --------------------------------------------------------->
-<br>
-<table align="center">
+<!-- ===================================================================================================================== -->
+<!-- HEADER -->
+<header>
+  <br>
+  <table class="headerTable">
     <tr>
-        <td>
-            <titulo>Erica Lima</titulo><br>
-            <subtitulo>Student and young professional currently based in Montreal-QC, Canada</subtitulo>
-        </td>
-        <td>
-            <div align="right">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/santinidelima/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" title="LinkedIn"></a></li>
-                    <li><a href="https://github.com/Kikasantini" target="_blank"><img src="img/newGithub.png" alt="GitHub" title="GitHub"></a></li>
-                    <li><a href="mailto:ericasantini92@hotmail.com?subject=Hey,%20I%20found%20your%20website!" target="_blank"><img src="img/email.png" alt="E-mail" title="E-mail"></a></li>
-                    <li><a href="files/Erica_Lima-Resume.pdf" target="_blank"><img src="img/file.png" alt="Resume" title="Resume"></a></li>
-                </ul>
-            </div>
-        </td>
-    </tr>
-</table>
-<br>
-<table align="center"><tr><td>
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------ PROJECT 1 ------------------------------------------------------->
-
-<table class="project">
-  <tr>
-    <td class="half">
-
-      <div class="w3-content w3-display-container">
-        <img src="img/Project1/1.jpg"> <!-- 1 image -->
-        <div class="numbertext">1/1</div>
-      </div>
-      
-    </td>
-    <td>
-      <table class="content">
-        <tr>
-          <td class="l1"> <!-- Nome e tags -->
-            <text>This website</text>
-            <hr>
-            <tag>html</tag> | 
-            <tag>CSS</tag> | 
-            <tag>Javascript</tag> | 
-            <tag>Visual Studio Code</tag> | 
-            <tag>Photoshop</tag>
-          </td>
-        </tr>
-        <tr>
-          <td class="l2"> <!-- Descrição do projeto -->
-
-            <p>This website started as a school project, which had a completely different idea. 
-            However, as I learned the basics of html and css, I just couldn't help myself. 
-            I needed a portfolio and I wanted it to look amazing.</p>
-
-            <p>I'm not quite there yet, 
-            but it's a work in progress and I have a lot of fun doing it.</p>
-
-            <p>Credits to
-            <a href="https://www.w3schools.com" class="mylink">W3Schools</a> | 
-            <a href="https://icon-icons.com" class="mylink">Icon-icons</a></p>
-
-            <p>Remaking this website <a href="portfolio/index.html" target="_blank"><b>here</b></a>.</p>
-
-          </td>
-        </tr>
-        <tr>
-          <td class="l3"> <!-- Links -->
-            <button><a href="https://github.com/Kikasantini/projects" target="_blank">GitHub</a></button>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
-
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------ PROJECT 2 ------------------------------------------------------->
-
-<table class="project">
-  <tr>
-    <td class="half">
-
-      <!-- Start of : Image slideshow -->
-      <div id="projeto2" class="w3-content w3-display-container">
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/1.jpg">
-          <div class="numbertext">1/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/2.jpg">
-          <div class="numbertext">2/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/3.jpg">
-          <div class="numbertext">3/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/4.jpg">
-          <div class="numbertext">4/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/5.jpg">
-          <div class="numbertext">5/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/6.jpg">
-          <div class="numbertext">6/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-          <img src="img/Project2/7.jpg">
-          <div class="numbertext">7/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-            <img src="img/Project2/8.jpg">
-            <div class="numbertext">8/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-            <img src="img/Project2/9.jpg">
-            <div class="numbertext">9/10</div>
-        </div>
-        <div class="w3-display-container mySlides">
-            <img src="img/Project2/10.jpg">
-            <div class="numbertext">10/10</div>
-        </div>
-        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-      </div>
-      <!-- End of : Image slideshow -->
-
-    </td>
-    <td>
-      <table class="content">
-        <tr>
-          <td class="l1"> <!-- Nome e tags -->
-            <text>Mobile game - Personal project</text>
-            <hr>
-            <tag>C#</tag> | 
-            <tag>Unity</tag> | 
-            <tag>Visual Studio</tag> | 
-            <tag>Photoshop</tag>
-          </td>
-        </tr>
-        <tr>
-          <td class="l2"> <!-- Descrição do projeto -->
-            <p>Gaming has been an important part of my life since I can remember. 
-            So I started this project in the late 2020's with a clear objective in mind: combine all good things I've experienced 
-            from many years of gaming in 1 single mobile game.</p>
-
-            <p>This has been a challenging and amazing experience, and there's so much more to learn and implement. 
-            This project is still ongoing and all the sprites I used are free.</p>
-
-            <p><b>About the game : </b>it is a turn-based RPG. There are 3 characters, each one with 3 different skills and equipments. 
-            The player must farm coins and skills and upgrade the equipment in order to defeat the boss and level up.</p>
-
-          </td>
-        </tr>
-        <tr>
-          <td class="l3"> <!-- Links -->
-
-            <table>
-                <tr>
-                    <td>
-                        <button><a href="https://github.com/Kikasantini/RunnerRPG" target="_blank">GitHub</a></button>
-                    </td>
-                    <td>
-                        <div class='videos'><div class='card'><button class="watchbutton">Demo Video</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
-                            <iframe class="trailervideo" width="560" height="315" src="img/Project2/video1.mp4" frameborder="0" allowfullscreen></iframe></div></div></div></div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
-
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------ PROJECT 3 ------------------------------------------------------->
-
-<table class="project">
-  <tr>
-    <td class="half">
-
-        <div class="w3-content w3-display-container">
-            <img src="img/Project3/1.jpg"> <!-- 1 image -->
-            <div class="numbertext">1/1</div>
-        </div>
-
-    </td>
-    <td>
-      <table class="content">
-        <tr>
-          <td class="l1"> <!-- Nome e tags -->
-            <text>Scripting - School Project</text>
-            <hr>
-            <tag>Python3</tag> |
-            <tag>Shell</tag> |
-            <tag>Linux</tag>
-          </td>
-        </tr>
-        <tr>
-          <td class="l2"> <!-- Descrição do projeto -->
-            
-            <p>This was a school project where we had to automate daily activities 
-              of a fictitious enterprise. So I chose a dummy translation company 
-              and implemented 3 simple scripts to streamline the processes.</p>
-            
-            <p><b>First Script :</b> <i>prix.py</i> <br>Calculates the price of each file to be translated based on the translation type (simple or sworn) and the number of pages. Then adds each amount to a text file.</p>
-
-            <p><b>Second Script :</b> <i>registre.py</i> <br>For each translated file, adds a registry (like an official registry number) to each page, and a final page with the translators' signatures.</p>
-
-            <p><b>Third Script :</b> <i>somme_revenu.py</i> <br>Calculates and records the total revenue for each day of work.</p>
-            
-            <p>For this project, I used the following packages and resources: 
-              Python3, Python Pip, PyPDF2, ReportLab and Crontab.
-            </p>
-
-            <p>Also, this was my first contact ever with Python. And I enjoyed it so much that it instantly became one of my main interests 
-              that I'd love to keep exploring professionally.</p>
-
-          </td>
-        </tr>
-        <tr>
-          <td class="l3"> <!-- Links -->
-
-            <table>
-                <tr>
-                    <td>
-                        <button><a href="https://github.com/Kikasantini/scripting-translationCompany.git" target="_blank">GitHub</a></button>
-                    </td>
-                    <td>
-                        <div class='videos'><div class='card'><button class="watchbutton">Demo Video</button><div class="close"><div class="trailerdivbox"><div class="videoWrapper">
-                            <iframe class="trailervideo" width="560" height="315" src="img/Project3/video.mp4" frameborder="0" allowfullscreen></iframe></div></div></div></div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<br>
-
-<!------------------------------------------------------------------------------------------------------------------------>
-<!------------------------------------------------------ PROJECT 4 ------------------------------------------------------->
-
-<table class="project">
-    <tr>
-      <td class="half">
-  
-          <div class="w3-content w3-display-container">
-              <img src="img/Project4/1.jpg">
-              <div class="numbertext">1/1</div>
-          </div>
-  
+      <td class="left">
+        <greet>I am <name>Erica</name></greet><br>
+        <hp1>_________________________________<br><hp2>J</hp2>UNIOR SOFTWARE DEVELOPER</hp1><br>
+        <hDescription><br>I am a <b>passionate</b>, creative coder<br>currently based in Montreal-QC, Canada</hDescription><br>
       </td>
-      <td>
-        <table class="content">
-          <tr>
-            <td class="l1">
-              <text>Webpage - School Project</text>
-              <hr>
-              <tag>html</tag> |
-              <tag>CSS</tag> |
-              <tag>Javascript</tag> |
-              <tag>Responsive</tag> |
-              <tag>Media query</tag>
-            </td>
-          </tr>
-          <tr>
-            <td class="l2">
-              
-              <p>Responsive website made with HTML, CSS and Javascript. I implemented a couple of simple games, 
-                which turned out to be really fun.
-              </p>
-  
-            </td>
-          </tr>
-          <tr>
-            <td class="l3">
-  
-              <table>
-                  <tr>
-                      <td>
-                          <button><a href="https://github.com/Kikasantini/projectHtml" target="_blank">GitHub</a></button>
-                      </td>
-                      <td>
-                          <button><a href="https://kikasantini.github.io/projectHtml/index.html" target="_blank">Visit the webpage</a></button>
-                      </td>
-                  </tr>
-              </table>
-  
-            </td>
-          </tr>
-        </table>
+      <td class="right">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/santinidelima/" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" title="LinkedIn profile" onmouseover="javascript:showMsg('LinkedIn profile');" onmouseout="javascript:hideMsg();"></a></li>
+          <li><a href="https://github.com/Kikasantini" target="_blank"><img src="img/newGithub.png" alt="GitHub" title="GitHub repositories" onmouseover="javascript:showMsg('GitHub repositories');" onmouseout="javascript:hideMsg();"></a></li>
+          <div class="nextLine"></div>
+          <li><a href="mailto:ericasantini92@hotmail.com?subject=Hey,%20I%20found%20your%20website!" target="_blank"><img src="img/email.png" alt="E-mail" title="E-mail me" onmouseover="javascript:showMsg('E-mail me');" onmouseout="javascript:hideMsg();"></a></li>
+          <li><a href="files/Erica_Lima-Resume.pdf" target="_blank"><img src="img/file.png" alt="Resume" title="Download resume" onmouseover="javascript:showMsg('Download resume');" onmouseout="javascript:hideMsg();"></a></li>
+          <div id="customMsg">Custom message</div>
+        </ul>
       </td>
     </tr>
   </table>
-  <br>
+</header>
 
+<!-- ===================================================================================================================== -->
 
-<!------------------------------------------------------------------------------------------------------------------------>
-</td></tr></table><br>
-<!------------------------------------------------------------------------------------------------------------------------>
-<!-------------------------------------------------- Start of : SCRIPT --------------------------------------------------->
-<script>
-  function SlideShow(id) {
-    this.container = document.getElementById(id);
-    this.leftBtn = this.container.querySelector('.w3-display-left');
-    this.rightBtn = this.container.querySelector('.w3-display-right');
-    this.slideIndex = 1;
-    var that = this;
+<!-- Image Modal -->
+<span class="close"><div id="myModal" class="modal"><img class="modal-content" id="img01"></div></span>
+<!-- Video Modal -->
+<div id="myVideoModal" class="modal"><span class="closeVideo">&times;</span>
+  <video class="modal-content" max-width="50%" height="auto" controls id="vid01"><source src="" type="video/mp4"></video>
+</div>
 
-    this.init = function() {
-      this.showDivs(this.slideIndex);
-    };
-    this.plusDivs = function(n) {
-      this.showDivs(this.slideIndex += n);
-    };
-    this.showDivs = function(n) {
-      var x = this.container.getElementsByClassName("mySlides");
-      if (n > x.length) {this.slideIndex = 1}    
-      if (n < 1) {this.slideIndex = x.length}
-      for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      x[this.slideIndex-1].style.display = "block";  
-    };
-    this.leftBtn.addEventListener('click', function() {
-      that.plusDivs(-1);
-    });
-    this.rightBtn.addEventListener('click', function() {
-      that.plusDivs(1);
-    });
-  }
+<!-- ===================================================================================================================== -->
+<!-- BODY -->
 
-  var bar = new SlideShow('projeto2');
-  bar.init();
+<div class="skew-cc"></div>
+<div class="white-block"> <!-- White Block -->
+<table>
 
-  var bar = new SlideShow('projeto3');
-  bar.init();
+  <tr><th><h1>This website</h1></th></tr>
 
-  var bar = new SlideShow('projetoModelo');
-  bar.init();
+  <tr>
+    <td>
+      <tag>Html</tag> | 
+      <tag>CSS</tag> | 
+      <tag>JavaScript</tag> | 
+      <tag>Visual Studio Code</tag> | 
+      <tag>Photoshop</tag>
+    </td>
+  </tr>
 
-</script>
-<!--------------------------------------------------- End of : SCRIPT ---------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------>
+  <tr>
+    <td>        
+      <p>
+        This website started as a school project, which had a completely different idea. 
+        However, as I learned the basics of html and css, I just couldn't help myself. 
+        I needed a portfolio and I wanted it to look amazing.
+      </p>
+      <p>
+        I'm not quite there yet, 
+        but it's a work in progress and I have a lot of fun doing it.
+      </p>
+      <p>
+        Credits to
+        <a href="https://www.w3schools.com" class="mylink">W3Schools</a> | 
+        <a href="https://icon-icons.com" class="mylink">Icon-icons</a>
+      </p>
+    </td>
+  </tr>
 
-<!-- Video Script -->
-<script>
-    $(function() {
-  function openVideo(event) {
-    var card = $(this).closest(".card");
-    var modal = $(".trailerdivbox", card);
-    modal.addClass("isOpen").show();
-  }
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/01.jpg" onclick="javascript:openModal('img/Original/01.jpg');">
+      <img class="teste" src="img/Miniature/02.jpg" onclick="javascript:openModal('img/Original/02.jpg');">
+      <img class="teste" src="img/Miniature/03.jpg" onclick="javascript:openModal('img/Original/03.jpg');">
+    </td>
+  </tr>
 
-  function closeVideo(event) {
-    var modal = $(".trailerdivbox.isOpen");
-    modal.removeClass("isOpen").hide();
-}
-  
+  <tr>
+    <td>
+      <br>
+      <a href="https://github.com/Kikasantini/projects" target="_blank"><button>GitHub</button></a>
+    </td>
+  </tr>
 
-  $(".videos").on("click", ".watchbutton", openVideo);
-  $(".videos").on("click", ".close", closeVideo);
-  
-});
-
-
-
-</script>
-
-<!--------------------------------------------------- End of : SCRIPT ---------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------>
-
-<table class="footer">
-    <tr>
-        <td>Montreal-QC, Canada - 2022<br>
-            Website under development by Erica Santini de Lima</td>
-    </tr>
 </table>
+</div> <!-- End of White Block -->
+<!-- ===================================================================================================================== -->
+<div class="skew-c"></div>
+<div class="colour-block"> <!-- Dark Block -->
+<table>
+  <tr><td><h1>Scripting with Python</h1></td></tr>
+
+  <tr>
+    <td>
+      <tag>Python3</tag> |
+      <tag>Shell</tag> |
+      <tag>Linux</tag>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p>
+        This was a school project where we had to automate daily activities 
+        of a fictitious enterprise. So I chose a dummy translation company 
+        and implemented 3 scripts to streamline the processes.
+      </p>
+      <p>
+        My first script calculates the price of each file to be translated based on the translation type (simple or sworn) and the number of pages, then adds each amount to a text file.
+      </p>
+      <p>
+        The second script adds an 'official' registry number for each page of the translated file, and an extra page with the translators' signatures.
+      </p>
+      <p>
+        Finally, the third script calculates and records the total revenue for each day of work.
+      </p>
+      <p>
+        For this project, I used the following packages and resources: 
+        Python3, Python Pip, PyPDF2, ReportLab and Crontab.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/04.jpg" onclick="javascript:openModal('img/Original/04.jpg');">
+      <img class="teste" src="img/Miniature/05.jpg" onclick="javascript:openModal('img/Original/05.jpg');">
+      <img class="teste" src="img/Miniature/06.jpg" onclick="javascript:openModal('img/Original/06.jpg');">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br>
+      <a href="https://github.com/Kikasantini/scripting-translationCompany.git" target="_blank"><button>GitHub</button></a>
+      <button onclick="javascript:openVideo('img/Videos/video01.mp4');">Demo Video</button>
+    </td>
+  </tr>
+
+</table>
+</div> <!-- End of Dark Block -->
+<!-- ===================================================================================================================== -->
+<div class="skew-cc"></div>
+<div class="white-block"> <!-- White Block -->
+<table>
+
+  <tr><th><h1>Responsive Webpage</h1></th></tr>
+
+  <tr>
+    <td>
+      <tag>html</tag> |
+      <tag>CSS</tag> |
+      <tag>Javascript</tag> |
+      <tag>Responsive</tag> |
+      <tag>Media query</tag>
+    </td>
+  </tr>
+
+  <tr>
+    <td>        
+      <p>
+        Responsive website made with HTML, CSS and Javascript. I implemented a couple of simple games, 
+        which turned out to be really fun.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/07.jpg" onclick="javascript:openModal('img/Original/07.jpg');">
+      <img class="teste" src="img/Miniature/08.jpg" onclick="javascript:openModal('img/Original/08.jpg');">
+      <img class="teste" src="img/Miniature/09.jpg" onclick="javascript:openModal('img/Original/09.jpg');">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br>
+      <a href="https://github.com/Kikasantini/projectHtml" target="_blank"><button>GitHub</button></a>
+      <a href="https://kikasantini.github.io/projectHtml/index.html" target="_blank"><button>Visit the webpage</button></a>
+    </td>
+  </tr>
+
+</table>
+</div> <!-- End of White Block -->
+<!-- ===================================================================================================================== -->
+<div class="skew-c"></div>
+<div class="colour-block"> <!-- Dark Block -->
+<table>
+
+  <tr><th><h1>Mobile game</h1></th></tr>
+
+  <tr>
+    <td>
+      <tag>C#</tag> | 
+      <tag>Unity</tag> | 
+      <tag>Visual Studio</tag> | 
+      <tag>Photoshop</tag>
+    </td>
+  </tr>
+
+  <tr>
+    <td>        
+      <p>
+        Gaming has been an important part of my life since I can remember. 
+        I started this project in 2020 with a clear objective in mind: combine all good things I've experienced 
+        from many years of gaming in 1 single mobile game. Easy peasy!
+      </p>
+      <p>
+        This has been a challenging and amazing experience, and there's so much more to learn and implement. 
+        This project is still ongoing and all the sprites I used are free.
+      </p>
+      <p>
+        <b>About the game : </b>it is a turn-based RPG. There are 3 characters, each one with 3 different skills and equipments. 
+        The player must farm coins and skills and upgrade the equipment in order to defeat the boss and level up.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/10.jpg" onclick="javascript:openModal('img/Original/10.jpg');">
+      <img class="teste" src="img/Miniature/11.jpg" onclick="javascript:openModal('img/Original/11.jpg');">
+      <img class="teste" src="img/Miniature/12.jpg" onclick="javascript:openModal('img/Original/12.jpg');">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br>
+      <a href="https://github.com/Kikasantini/RunnerRPG" target="_blank"><button>GitHub</button></a>
+      <button onclick="javascript:openVideo('img/Videos/video02.mp4');">Demo Video</button>
+    </td>
+  </tr>
+
+</table>
+</div> <!-- End of Dark Block -->
+<!-- ===================================================================================================================== -->
+<!--
+<div class="skew-cc"></div>
+<div class="white-block">
+<table>
+
+  <tr><th><h1>Título</h1></th></tr>
+
+  <tr>
+    <td>
+      <tag>tag</tag> | 
+      <tag>tag</tag> | 
+      <tag>tag</tag> | 
+      <tag>tag</tag>
+    </td>
+  </tr>
+
+  <tr>
+    <td>        
+      <p>
+        Gaming has been an important part of my life since I can remember. 
+        I started this project in 2020 with a clear objective in mind: combine all good things I've experienced 
+        from many years of gaming in 1 single mobile game. Easy peasy!
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/13.jpg" onclick="javascript:openModal('img/Original/13.jpg');">
+      <img class="teste" src="img/Miniature/14.jpg" onclick="javascript:openModal('img/Original/14.jpg');">
+      <img class="teste" src="img/Miniature/15.jpg" onclick="javascript:openModal('img/Original/15.jpg');">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br>
+      <a href="..." target="_blank"><button>Button</button></a>
+      <button onclick="javascript:openVideo('...');">Button</button>
+    </td>
+  </tr>
+
+</table>
+</div>
+-->
+<!-- ===================================================================================================================== -->
+<!--
+<div class="skew-c"></div>
+<div class="colour-block">
+<table>
+
+  <tr><th><h1>Título</h1></th></tr>
+
+  <tr>
+    <td>
+      <tag>tag</tag> | 
+      <tag>tag</tag> | 
+      <tag>tag</tag> | 
+      <tag>tag</tag>
+    </td>
+  </tr>
+
+  <tr>
+    <td>        
+      <p>
+        Gaming has been an important part of my life since I can remember. 
+        I started this project in 2020 with a clear objective in mind: combine all good things I've experienced 
+        from many years of gaming in 1 single mobile game. Easy peasy!
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img class="teste" src="img/Miniature/16.jpg" onclick="javascript:openModal('img/Original/16.jpg');">
+      <img class="teste" src="img/Miniature/17.jpg" onclick="javascript:openModal('img/Original/17.jpg');">
+      <img class="teste" src="img/Miniature/18.jpg" onclick="javascript:openModal('img/Original/18.jpg');">
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <br>
+      <a href="..." target="_blank"><button>Button</button></a>
+      <button onclick="javascript:openVideo('...');">Button</button>
+    </td>
+  </tr>
+
+</table>
+</div>
+-->
+<!-- ===================================================================================================================== -->
+<!--
+<div class="skew-cc"></div>
+<div class="white-block">
+  <table>
+
+    <tr><th><h1>Título</h1></th></tr>
+  
+    <tr>
+      <td>
+        <tag>tag</tag> | 
+        <tag>tag</tag> | 
+        <tag>tag</tag> | 
+        <tag>tag</tag>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>        
+        <p>
+          Gaming has been an important part of my life since I can remember. 
+          I started this project in 2020 with a clear objective in mind: combine all good things I've experienced 
+          from many years of gaming in 1 single mobile game. Easy peasy!
+        </p>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <img class="teste" src="img/Miniature/16.jpg" onclick="javascript:openModal('img/Original/16.jpg');">
+        <img class="teste" src="img/Miniature/17.jpg" onclick="javascript:openModal('img/Original/17.jpg');">
+        <img class="teste" src="img/Miniature/18.jpg" onclick="javascript:openModal('img/Original/18.jpg');">
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <br>
+        <a href="..." target="_blank"><button>Button</button></a>
+        <button onclick="javascript:openVideo('...');">Button</button>
+      </td>
+    </tr>
+  
+  </table>
+</div>
+-->
+<!-- ===================================================================================================================== -->
+<!--
+<div class="skew-c"></div>
+<div class="colour-block">
+  <table>
+
+    <tr><th><h1>Título</h1></th></tr>
+  
+    <tr>
+      <td>
+        <tag>tag</tag> | 
+        <tag>tag</tag> | 
+        <tag>tag</tag> | 
+        <tag>tag</tag>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>        
+        <p>
+          Gaming has been an important part of my life since I can remember. 
+          I started this project in 2020 with a clear objective in mind: combine all good things I've experienced 
+          from many years of gaming in 1 single mobile game. Easy peasy!
+        </p>
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <img class="teste" src="img/Miniature/16.jpg" onclick="javascript:openModal('img/Original/16.jpg');">
+        <img class="teste" src="img/Miniature/17.jpg" onclick="javascript:openModal('img/Original/17.jpg');">
+        <img class="teste" src="img/Miniature/18.jpg" onclick="javascript:openModal('img/Original/18.jpg');">
+      </td>
+    </tr>
+  
+    <tr>
+      <td>
+        <br>
+        <a href="..." target="_blank"><button>Button</button></a>
+        <button onclick="javascript:openVideo('...');">Button</button>
+      </td>
+    </tr>
+  
+  </table>
+</div>
+-->
+<!-- ===================================================================================================================== -->
+<!-- FOOTER -->
+<div class="skew-cc"></div> <!-- Dark/light skew -->
+<!--<div class="skew-cc"></div>--> <!-- Light/dark skew -->
+<footer>
+  <br><br><br>
+  Siteweb under development by © Erica Santini de Lima, 2022<br><br>
+</footer>
+<!-- ===================================================================================================================== -->
+<!-- Custom Message SCRIPT -->
+
+<script>
+  function showMsg(message){
+    document.getElementById("customMsg").style.color = "#ffffff";
+    document.getElementById("customMsg").innerHTML = message;
+  }
+  function hideMsg(){
+    document.getElementById("customMsg").style.color = "#3b3b3b";
+  }
+</script>
+
+<!-- ===================================================================================================================== -->
+<!-- Image and Video Modal SCRIPT -->
+
+<script>
+  var modal = document.getElementById("myModal"); // Image modal
+  var modalImg = document.getElementById("img01");
+  var vidModal = document.getElementById("myVideoModal"); // Video modal
+  var modalVideo = document.getElementById("vid01");
+  function openVideo(videoPath){
+    vidModal.style.display = "block";
+    modalVideo.src = videoPath;
+  }
+  function openModal(imgPath){
+    modal.style.display = "block";
+    modalImg.src = imgPath;
+  }
+  var span = document.getElementsByClassName("close")[0];
+  var vidSpan = document.getElementsByClassName("closeVideo")[0];
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+  vidSpan.onclick = function(){
+    vidModal.style.display = "none";
+    modalVideo.pause();
+  }
+</script>
+
+<!-- ===================================================================================================================== -->
 
 </body>
 </html>
